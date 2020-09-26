@@ -56,3 +56,5 @@ client.on('message', message => {
       return undefined
   }  
 })
+
+client.login("put here the token of your bot");
