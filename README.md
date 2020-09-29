@@ -19,7 +19,10 @@ https://www.youtube.com/watch?v=X_qg0Ut9nU8 after you watch that video read "ins
 For additional help contact me in discord, DUNNERツ#7496
 
 oso i have a discord bot! XD 
-and you can invite it here: https://discord.com/oauth2/authorize?client_id=717805693469720767&scope=bot&permissions=70642768&guild_id=0
+and you can invite it here:
+https://discord.com/oauth2/authorize?client_id=717805693469720767&scope=bot&permissions=70642768&guild_id=0
+
+
 olso join my BOT support discord here:https://discord.gg/cZXsSr9
 
 and again for additional help contact me in discord, DUNNERツ#7496
