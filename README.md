@@ -1,5 +1,5 @@
-# DiscordBotKick_member_Code
-a discord code for admins to KickComand
+# DiscordBot_code
+a discord code for admins to and for fun
 
 first of all you need to install 
 https://nodejs.org/en/
