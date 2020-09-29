@@ -1,5 +1,6 @@
 # DiscordBot_code
 a discord code for admins to and for fun
+NOTE: this is not the entire code of my bot
 
 first of all you need to install 
 https://nodejs.org/en/
