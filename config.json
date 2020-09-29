@@ -1,5 +1,6 @@
 {
-    "token": "<BOT TOKEN INSIDE THIS>",
+    "token": "Your bot token",
     "everyoneMention": false,
-    "hostedBy": true
+    "hostedBy": true,
+    "default_prefix": "$"
 }
