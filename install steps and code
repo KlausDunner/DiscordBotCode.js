@@ -1,60 +1,6 @@
 //open your code editor then type in terminal:
 npm i discord.js       //and press enter then type:
 npm i moment           // then type in server.js or in index.js these below at the first line of code
-const Discord = require("discord.js");
-const client = new Discord.Client();
-const moment = require("moment")
-const PREFIX = "$"     //NOTE: choose the prefix that you whant
-
-//////////now copy and paste this with one space of line:
-function presence(){
-  client.user.setPresence({
-    status: "online",
-    activity: {
-     name: ",p help",
-    type: "PLAYING" 
-    } 
-  });
-} 
 
 
-client.on("ready", () => {
-    console.log("BOT listo ");
- });
 
-client.on('message', message => {
-  const mentionedMember = message.mentions.members.first()
-  const args = message.content.substring(PREFIX.length).split(" ")
-
-  if (message.content.startsWith(`${PREFIX}kick`)) {
-      const reason = args.slice(2).join(" ")
-      if (!message.member.hasPermission('KICK_MEMBERS')) return message.channel.send("You don\'t have permission to do this command")
-      if (!message.guild.me.hasPermission('KICK_MEMBERS')) return message.channel.send("I don\'t have permission to this command")
-      if (!args[1]) return message.channel.send("You need to specify someone to kick")
-      if (!mentionedMember) return message.channel.send("I can't find that member")
-      if (mentionedMember.roles.highest.position >= message.member.roles.highest.position && message.author.id !== message.guild.owner.id) {
-          return message.channel.send("You can\'t kick this member due to your role being lower than theirs or there the guild owner")
-      }
-      if (mentionedMember.id === message.author.id) return message.channel.send("Why would you want to kick yourself ?")
-      if (mentionedMember.kickable) {
-          var embed = new Discord.MessageEmbed()
-          .setAuthor(`${message.author.username} - (${message.author.id})`, message.author.displayAvatarURL())
-          .setThumbnail(mentionedMember.user.displayAvatarURL())
-          .setColor('#ebb734')
-          .setDescription(`
-**Member:** ${mentionedMember.user.username} - (${mentionedMember.user.id})
-**Action:** Kick
-**Reason:** ${reason || "Undefined"}
-**Channel:** ${message.channel}
-**Time:** ${moment().format('llll')}
-          `)
-      message.channel.send(embed)
-      mentionedMember.kick()
-      } else {
-          return message.channel.send("I can\'t kick this useer make sure I have permissions")
-      }
-      return undefined
-  }  
-})
-
-client.login("put here the token of your bot");
