@@ -4,6 +4,11 @@ a discord code for admins to and for fun
 first of all you need to install 
 https://nodejs.org/en/
 
+olso you will need to install quick.db 
+do in terminal npm i quick.db
+if this do not work its becouse you need python leasted version, when you install python and this dont work try watching this video:
+https://www.youtube.com/watch?v=-U2-rRxhpx8
+
 and you will need your text editor if you dont have one download this one 
 https://code.visualstudio.com/?wt.mc_
 
