@@ -1,6 +1,7 @@
 //open your code editor then type in terminal:
 npm i discord.js       //and press enter then type:
-npm i moment           // then type in server.js or in index.js these below at the first line of code
+npm i moment           // then type in server.js or in index.js these below at the first line of code olso type:
+npm i quick.db         //NOTE: if you have errors installing quick.db please read the file with the name README
 
 
 
